@@ -1,5 +1,4 @@
 interface VoxComms {
-    String name();
-    String designation();
-    String classification();
+    String transmit(String message);
+    void identify();
 }
