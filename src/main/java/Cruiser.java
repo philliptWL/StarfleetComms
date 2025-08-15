@@ -1,7 +1,7 @@
 public class Cruiser implements VoxComms{
-    private String name;
-    private String designation;
-    private String classification;
+    private final String name;
+    private final String designation;
+    private final String classification;
 
     public Cruiser(String name, String designation, String classification){
         this.name = name;
@@ -19,18 +19,6 @@ public class Cruiser implements VoxComms{
 
     public String getClassification() {
         return classification;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setDesignation(String designation) {
-        this.designation = designation;
-    }
-
-    public void setClassification(String classification) {
-        this.classification = classification;
     }
 
     @Override

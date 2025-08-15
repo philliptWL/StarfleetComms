@@ -1,7 +1,7 @@
 public class VoxOfficer implements VoxComms {
-    private String name;
-    private String designation;
-    private String rank;
+    private final String name;
+    private final String designation;
+    private final String rank;
 
     public VoxOfficer(String name, String designation, String rank) {
         this.name = name;
@@ -19,18 +19,6 @@ public class VoxOfficer implements VoxComms {
 
     public String getRank() {
         return rank;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setDesignation(String designation) {
-        this.designation = designation;
-    }
-
-    public void setRank(String rank) {
-        this.rank = rank;
     }
 
     @Override

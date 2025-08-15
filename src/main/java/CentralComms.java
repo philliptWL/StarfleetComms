@@ -53,7 +53,7 @@ public class CentralComms {
                     
                     +++WARNING+++
                     
-                    UNAUTHORIZED ACCESS IS PUNSIHABLE BY SUMMARY EXECUTION UNDER LEX IMPERIALIS, ARTICLE 447: HERESY VIA DATA-CORRUPTION
+                    UNAUTHORIZED ACCESS IS PUNISHABLE BY SUMMARY EXECUTION UNDER LEX IMPERIALIS, ARTICLE 447: HERESY VIA DATA-CORRUPTION
                     
                     """;
 

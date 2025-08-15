@@ -1,7 +1,7 @@
 public class StarFort implements VoxComms{
-    private String name;
-    private String designation;
-    private String classification;
+    private final String name;
+    private final String designation;
+    private final String classification;
 
     public StarFort(String name, String designation, String classification){
         this.name = name;
@@ -21,18 +21,6 @@ public class StarFort implements VoxComms{
         return classification;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setDesignation(String designation) {
-        this.designation = designation;
-    }
-
-    public void setClassification(String classification) {
-        this.classification = classification;
-    }
-
     @Override
     public String transmit(String message) {
         String date = String.format("%03d", (int)(Math.random()*999)) + ".532.M41";
@@ -43,7 +31,7 @@ public class StarFort implements VoxComms{
                 %s
                 
                 +++GLORY TO THE OMNISSIAH+++
-                """,date,message);
+                """,date,message) + broadcastStatus(message);
     }
 
     @Override
